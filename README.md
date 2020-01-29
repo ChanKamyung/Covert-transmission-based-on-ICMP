@@ -1,6 +1,5 @@
 # Covert-transmission-based-on-ICMP
-#【receiving terminal】
-      隐蔽传输接收端Python运行代码
+【receiving terminal】 隐蔽传输接收端Python运行代码
 			主程序：rcv.py
 			功能：接收有预定特征的ICMP报文 -> 提取二进制信息 -> BCH纠错译码 -> 生成二进制文件 -> Huffman压缩译码 -> 得到源文件
 			输入：无输入，直接运行即可
