@@ -1,4 +1,6 @@
 # Covert-transmission-based-on-ICMP
+See more detail at https://blog.csdn.net/a675115471/article/details/104098505
+# sdas 
 【receiving terminal】 隐蔽传输接收端Python运行代码
 			主程序：rcv.py
 			功能：接收有预定特征的ICMP报文 -> 提取二进制信息 -> BCH纠错译码 -> 生成二进制文件 -> Huffman压缩译码 -> 得到源文件
@@ -17,4 +19,4 @@
 
 【其他说明】		①发送端发送的文件，应与send.py置于同一目录
 			②建议收发端Python版本均不低于3.7
-See more detail at https://blog.csdn.net/a675115471/article/details/104098505
+
