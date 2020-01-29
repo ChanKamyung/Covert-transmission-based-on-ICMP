@@ -1,5 +1,4 @@
-# Project Title
-Covert-transmission-based-on-ICMP
+# Covert-transmission-based-on-ICMP
 See more detail at https://blog.csdn.net/a675115471/article/details/104098505
 # Prerequisites
 在运行程序前，你需要先安装第三方库scapy，安装说明详见https://scapy.readthedocs.io/en/latest/installation.html  
