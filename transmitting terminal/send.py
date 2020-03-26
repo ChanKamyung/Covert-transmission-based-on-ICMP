@@ -75,7 +75,7 @@ if __name__ == '__main__':
     
     file_send(input('待传输的文件名：'), \
               input('传输对象的ip：'), \
-              eval(input('丢包率(0~1)')))
+              eval(input('丢包率(0~1)：')))
     
     END = time.perf_counter()
     print('总用时 %d 秒.' % int(END - START))
