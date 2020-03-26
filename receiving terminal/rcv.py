@@ -34,6 +34,11 @@ filterstr="icmp"
 buf = []
 cntr = 0
 
-print('I\'m ready..')
+show_interfaces()
+iface_id = input('\n请输入你网卡对应的编号：')
 
-sniff(filter=filterstr,prn=pack_callback, iface='eth0', count = 0)
+print('\nI\'m ready..')
+
+sniff(filter=filterstr,prn=pack_callback, \
+      iface=IFACES.dev_from_index(iface_id), \
+      count = 0)
