@@ -10,7 +10,7 @@ See more detail at https://blog.csdn.net/a675115471/article/details/104098505
 `隐蔽传输接收端Python运行代码`  
 主程序：rcv.py  
 功能：接收有预定特征的ICMP报文 -> 提取二进制信息 -> BCH纠错译码 -> 生成二进制文件 -> Huffman压缩译码 -> 得到源文件  
-输入：选择需要监听的网卡  
+输入：根据提示，选择需要监听的网卡  
 ## 【transmitting terminal】
 `隐蔽传输发送端Python运行代码`  
 主程序：send.py  
