@@ -62,9 +62,9 @@ def file_send(infile, host, err_rate):
             seq += 1
             if random.random() >= err_rate:
                 send_msg(host, j, seq, length, redun)
-
+                
     for i in range(3): #冗余
-        seq += 1
+        seq = length + 1
         if random.random() >= err_rate:
             send_msg(host, j, seq, length, redun)
 
@@ -72,10 +72,11 @@ def file_send(infile, host, err_rate):
 
 if __name__ == '__main__':
     START = time.perf_counter()
-    
-    file_send(input('待传输的文件名：'), \
-              input('传输对象的ip：'), \
-              eval(input('丢包率(0~1)：')))
-    
-    END = time.perf_counter()
-    print('总用时 %d 秒.' % int(END - START))
+
+    while True:
+        file_send(input('待传输的文件名：'), \
+                  input('传输对象的ip：'), \
+                  eval(input('丢包率(0~1)：')))
+        
+        END = time.perf_counter()
+        print('总用时 %d 秒.\n' % int(END - START))
